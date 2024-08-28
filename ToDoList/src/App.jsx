@@ -39,8 +39,10 @@ function App() {
     <TodoProvider value={{todos,addTodo,updateTodo,deleteTodo,toggleComplete}}>
     <div className="bg-[#172842] min-h-screen py-8">
                 <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-                  <img src="Todo.svg" alt="img" className='h-10 w-10 sticky m-2' />
+                  <div className='flex justify-center'>
+                  <img src="Todo.svg" alt="img" className='h-10 w-10 sticky mr-10 m-2' />
                     <h1 className="text-2xl font-bold text-center mb-8 mt-2 sticky">Manage Your Todos</h1>
+                  </div>
                     <div className="mb-4">
                         {/* Todo form goes here */} 
                         <TodoForm/>
